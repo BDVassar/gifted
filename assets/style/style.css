@@ -1,1 +1,18 @@
 /* BASIC STYLES HERE */
+
+
+
+.card-hidden {
+  background-image: url('https://thumbs.dreamstime.com/b/seamless-christmas-gift-wrapping-paper-pattern-texture-wallpaper-129630913.jpg');
+  background-size: cover;
+  background-position: center;
+  height: 25em;
+}
+
+.card-hidden:hover {
+  cursor: pointer;
+}
+
+.text-vfx {
+  font-size: 100px;
+}

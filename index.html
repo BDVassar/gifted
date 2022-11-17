@@ -25,21 +25,53 @@
       </a>
     </nav>
   </header>
+
+
   <main>
     <div class="container-fluid">
       <div class="row">
-        <div class="col-12">
-          <div id="app"></div>
+        <!-- SECTION From area -->
+        <div class="col-12 col-md-4 bg-dark p-5 d-flex flex-column gap-5">
+          <h1 class="text-light mb-5">Gifted</h1>
+          <form class="row bg-dark p-5 gap-5" action="" onsubmit="app.giftsController.createGift()">
+            <div class=" col-12 form-floating mb-3" onsubmit="app.giftsController.createGift()">
+              <input type="text" class="form-control" id="Tag" placeholder="Tag" name="tag">
+              <label for="Tag">Tag</label>
+              </dd>
+              <div class=" col-12 form-floating">
+                <input type="url" class="form-control" id="URL" placeholder="URL" name="url">
+                <label for="URL">URL</label>
+              </div>
+              <button class="btn btn-success">Submit</button>
+              <div class=" col-12 input-group mb-3">
+                <input type="text" class="form-control" placeholder="Search Gifs" aria-label="Search Gifs"
+                  aria-describedby="button-addon2">
+                <button class="btn btn-outline-secondary mdi mdi-magnify fs-5" type="button"
+                  id="button-addon2"></button>
+              </div>
+            </div>
+          </form>
         </div>
+        <!-- SECTION Gifts Template -->
+        <col-12 class="col-md-8">
+          <section id="gifts" class="row p-5 gap-3 justify-content-evenly">
+            <div class="col-12 col-md-3 card shadow">
+              <p></p>
+            </div>
+          </section>
+        </col-12>
       </div>
     </div>
   </main>
+
+
   <footer class="bg-dark text-light">
     <div class="text-center no-select">
       <p><small>Made with 💖 by CodeWorks</small></p>
     </div>
   </footer>
 
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.23.0/axios.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
     crossorigin="anonymous"></script>
